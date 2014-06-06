@@ -1,0 +1,27 @@
+/* 06. Blockquotes
+   ---------------------------------------------------------------------------*/
+
+   blockquote {
+     padding: 10px 20px;
+     margin: 0 0 20px;
+     border: {
+       left: 2px solid;
+     }
+     q {
+       font: {
+         size: $heading-3;
+       }
+     }
+   }
+
+   blockquote.pull-right {
+     padding: {
+       right: 15px;
+       left: 0;
+     }
+     border: {
+       right: 2px solid;
+       left: 0;
+     }
+     text-align: right;
+   }

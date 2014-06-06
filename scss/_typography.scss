@@ -1,0 +1,60 @@
+/* 01. Typography
+   ---------------------------------------------------------------------------*/
+
+   // Headings
+   html {
+     color: $dark;
+     font: {
+       family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+       weight: 200;
+     }
+   }
+
+   h1, h2, h3, h4, h5, h6 {
+     font: {
+       weight: 200;
+     }
+   }
+
+   h1 {
+     margin: .5em 0;
+     font: {
+       size: 36px;
+     }
+   }
+
+   h2 {
+     font: {
+       size: 24px;
+     }
+   }
+
+   h3, h4, h5, h6 {
+     font: {
+       size: 20px;
+     }
+   }
+
+   // Paragraph
+   p {
+     font: {
+       size: 14px;
+     }
+   }
+
+   // Titles
+   .title {
+     color: $black;
+     font: {
+       size: 48px;
+     }
+   }
+
+   .subtitle {
+     color: $black;
+     font: {
+       size: 24px;
+     }
+   }
+
+   

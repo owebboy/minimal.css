@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="charset" content="utf-8">
+  <meta name="author" content="Oliver Pope">
+
+  <title>minimal.css</title>
+
+  <link rel="stylesheet" href="css/minimal.css">
+</head>
+<body>
+  <div id="page">
+    <header>
+      <h1 class="title">minimal.css <span class="subtitle">style guide</span></h1>
+    </header>
+    <div class="grid">
+      <section class="col-1-3">
+        <!-- 01. Typography -->
+        <section id="typography">
+          <p class="lead">01. Typography</p>
+
+          <div class="example">
+            <h1 class="ex-type">Heading 1</h1>
+            <p class="caption">Helvetica Neue, 36px</p>
+            <h2 class="ex-type">Heading 2</h2>
+            <p class="caption">Helvetica Neue, 24px</p>
+            <h3 class="ex-type">Heading 3</h3>
+            <p class="caption">Helvetica Neue, 20px</p>
+            <p class="ex-type">Paragraph</p>
+            <p class="caption">Helvetica Neue, 14px</p>
+            <h1 class="title ex-type">Title</h1>
+            <p class="caption">Helvetica Neue, 48px .title</p>
+            <h2 class="subtitle ex-type">Subtitle</h2>
+            <p class="caption">Helvetica Neue, 24px .subtitle</p>
+          </div>
+        </section>
+      </section>
+
+      <section class="col-2-3">
+        <!-- 02. Color -->
+        <section id="color">
+          <p class="lead">02. Color</p>
+          <p>For backgrounds, use <code>.bg-*color*</code> and for text, <code>.text-*color*</code>.</p>
+
+          <div class="example grid">
+            <div class="bg-blue col-1-6 ex-pad"></div>
+            <div class="bg-green col-1-6 ex-pad"></div>
+            <div class="bg-yellow col-1-6 ex-pad"></div>
+            <div class="bg-orange col-1-6 ex-pad"></div>
+            <div class="bg-red col-1-6 ex-pad"></div>
+            <div class="bg-purple col-1-6 ex-pad"></div>
+          </div>
+        </section>
+
+        <!-- 03. Text Classes -->
+        <section id="text-classes">
+          <p class="lead">03. Text Classes</p>
+
+          <div class="example grid">
+            <div class="col-1-3">
+              <div id="bold">
+                <p class="ex-bigger bold">Paragraph</p>
+                <p class="caption">.bold, b, strong</p>
+              </div>
+
+              <div id="italic">
+                <p class="ex-bigger italic">Paragraph</p>
+                <p class="caption">.italic, i, em</p>
+              </div>
+
+              <div id="uppercase">
+                <p class="ex-bigger uppercase">Paragraph</p>
+                <p class="caption">.uppercase</p>
+              </div>
+
+              <div id="lowercase">
+                <p class="ex-bigger lowercase">Paragraph</p>
+                <p class="caption">.lowercase</p>
+              </div>
+
+              <div id="code">
+                <p class="ex-bigger code">Paragraph</p>
+                <p class="caption">.code, code</p>
+              </div>
+            </div>
+
+            <div class="col-1-3">
+              <div id="pull-left">
+                <p class="ex-bigger pull-left">Paragraph</p>
+                <p class="caption">.pull-left</p>
+              </div>
+
+              <div id="pull-right">
+                <p class="ex-bigger pull-right">Paragraph</p>
+                <p class="caption">.pull-right</p>
+              </div>
+
+              <div id="centered">
+                <p class="ex-bigger centered">Paragraph</p>
+                <p class="caption">.centered</p>
+              </div>
+
+              <div id="caption">
+                 <p class="ex-bigger ex-pad-top caption">Paragraph</p>
+                 <p class="caption ex-pad-bottom">.caption</p>
+              </div>
+
+              <div id="lead">
+                 <p class="lead">Paragraph</p>
+                 <p class="caption">.lead</p>
+              </div>
+
+            </div>
+            <div class="col-1-3">
+
+            </div>
+        </section>
+      </section>
+
+      <section class="col-1-2">
+        <!-- 04. Buttons -->
+        <section id="buttons">
+          <p class="lead">04. Buttons</p><br>
+
+          <div class="example grid">
+            <div id="blue-button" class="col-1-3">
+              <a class="btn btn-blue" href="#">Blue Button</a>
+            </div>
+            <div id="green-button" class="col-1-3">
+              <a class="btn btn-green" href="#">Green Button</a>
+            </div>
+            <div id="yellow-button" class="col-1-3">
+              <a class="btn btn-yellow" href="#">Yellow Button</a>
+            </div>
+          </div>
+
+          <div class="example grid">
+            <div id="orange-button" class="col-1-3">
+              <a class="btn btn-orange" href="#">Orange Button</a>
+            </div>
+            <div id="red-button" class="col-1-3">
+              <a class="btn btn-red" href="#">Red Button</a>
+            </div>
+            <div id="purple-button" class="col-1-3">
+              <a class="btn btn-purple" href="#">Purple Button</a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="col-1-2">
+        <!-- 06. Blockquotes -->
+        <section id="blockquotes">
+          <p class="lead">06. Blockquotes</p><br>
+
+          <div class="example">
+            <div id="blockquote">
+              <blockquote>
+                <q>Innovation distinguishes between a leader and a follower.</q>
+                <p class="caption">Steve Jobs, Apple</p>
+              </blockquote>
+            </div>
+
+            <div id="blockquote">
+              <blockquote class="pull-right">
+                <q>Design is not just what it looks like and feels like. Design is how it works.</q>
+                <p class="caption">Steve Jobs, Apple</p>
+              </blockquote>
+              <p class="caption">.pull-right</p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <!-- 05. Images -->
+        <section id="images">
+          <p class="lead">05. Images</p><br>
+
+          <div class="example grid">
+            <div id="responsive" class="col-1-2">
+              <img src="http://placehold.it/960x250" class="responsive">
+              <p class="caption">Responsive Image<br>.responsive</p>
+            </div>
+
+            <div id="border" class="col-1-4">
+              <img src="http://placehold.it/250" class="border">
+              <p class="caption">Bordered Image<br>.border</p>
+            </div>
+
+            <div id="circle" class="col-1-4">
+              <img src="http://placehold.it/250" class="circle">
+              <p class="caption">Circular Image<br>.circle</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
