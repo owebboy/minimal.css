@@ -2,12 +2,12 @@
    ---------------------------------------------------------------------------*/
 
    .btn {
-     border-radius: 8px;
-     padding: 1em 20%;
-     transition: 1s all;
-     display: inline-block;
-     width: 100%;
      color: $black;
+     padding: 1em;
+     margin: .2em;
+     border-radius: 2px;
+     max-width: 100%;
+     display: inline-block;
      text: {
        decoration: none;
        align: center;

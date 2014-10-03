@@ -4,7 +4,7 @@
 /* 01. Typography
    ---------------------------------------------------------------------------*/
 html {
-  color: #4a4a4a;
+  color: #4A4A4A;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 200; }
 
@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 200; }
 
 h1 {
-  margin: .5em 0;
+  margin: 0.5em 0;
   font-size: 36px; }
 
 h2 {
@@ -25,50 +25,50 @@ p {
   font-size: 14px; }
 
 .title {
-  color: black;
+  color: #000000;
   font-size: 48px; }
 
 .subtitle {
-  color: black;
+  color: #000000;
   font-size: 24px; }
 
 /* 02. Color
    ---------------------------------------------------------------------------*/
 .text-blue {
-  color: #7eb8d9; }
+  color: #7EB8D9; }
 
 .text-green {
-  color: #98d272; }
+  color: #98D272; }
 
 .text-yellow {
-  color: #f5de6c; }
+  color: #F5DE6C; }
 
 .text-orange {
-  color: #ffc273; }
+  color: #FFC273; }
 
 .text-red {
-  color: #ff6a61; }
+  color: #FF6A61; }
 
 .text-purple {
-  color: #9761a8; }
+  color: #9761A8; }
 
 .bg-blue {
-  background: #7eb8d9; }
+  background: #7EB8D9; }
 
 .bg-green {
-  background: #98d272; }
+  background: #98D272; }
 
 .bg-yellow {
-  background: #f5de6c; }
+  background: #F5DE6C; }
 
 .bg-orange {
-  background: #ffc273; }
+  background: #FFC273; }
 
 .bg-red {
-  background: #ff6a61; }
+  background: #FF6A61; }
 
 .bg-purple {
-  background: #9761a8; }
+  background: #9761A8; }
 
 /* 03. Text Classes
    ---------------------------------------------------------------------------*/
@@ -94,8 +94,8 @@ p {
   text-align: center !important; }
 
 .lead {
-  margin: .2em 0;
-  color: #7f7f7f;
+  margin: 0.2em 0;
+  color: #7F7F7F;
   font-size: 24px; }
 
 .code, code {
@@ -103,52 +103,51 @@ p {
   font-weight: 400; }
 
 .caption {
-  margin: .1em 0;
+  margin: 0.1em 0;
   font-style: italic;
   font-size: 14px; }
 
 /* 04. Buttons
    ---------------------------------------------------------------------------*/
 .btn {
-  border-radius: 8px;
-  padding: 1em 20%;
-  -webkit-transition: 1s all;
-  transition: 1s all;
+  color: #000000;
+  padding: 1em;
+  margin: 0.2em;
+  border-radius: 2px;
+  max-width: 100%;
   display: inline-block;
-  width: 100%;
-  color: black;
   text-decoration: none;
   text-align: center; }
 
 .btn-blue {
-  background: #7eb8d9; }
+  background: #7EB8D9; }
   .btn-blue:hover {
     background: #a5cee5; }
 
 .btn-green {
-  background: #98d272; }
+  background: #98D272; }
   .btn-green:hover {
-    background: #b4de99; }
+    background: #b5de99; }
 
 .btn-yellow {
-  background: #f5de6c; }
+  background: #F5DE6C; }
   .btn-yellow:hover {
-    background: #f8e99c; }
+    background: #f8e79c; }
 
 .btn-orange {
-  background: #ffc273; }
+  background: #FFC273; }
   .btn-orange:hover {
-    background: #ffd8a6; }
+    background: #ffd7a6; }
 
 .btn-red {
-  background: #ff6a61; }
+  background: #FF6A61; }
   .btn-red:hover {
-    background: #ff9a94; }
+    background: #ff9994; }
 
 .btn-purple {
-  background: #9761a8; }
+  background: #9761A8; }
   .btn-purple:hover {
-    background: #ad82ba; }
+    background: #ac82ba; }
 
 /* 05. Images
    ---------------------------------------------------------------------------*/
@@ -157,7 +156,7 @@ p {
   height: auto; }
 
 .border {
-  border: 5px solid #4a4a4a; }
+  border: 5px solid #4A4A4A; }
 
 .circle {
   border-radius: 100%; }
@@ -178,17 +177,15 @@ blockquote.pull-right {
   border-left: 0;
   text-align: right; }
 
-/* 04. Grid
+/* 06. Grid
 	 ---------------------------------------------------------------------------*/
-html,
-body {
+html, body {
   margin: 2em 2%; }
 
 .grid {
   margin: 0 0 20px 0;
   width: 100%; }
   .grid:after {
-    /* Or @extend clearfix */
     content: "";
     display: table;
     clear: both; }
@@ -251,27 +248,13 @@ body {
 	 v2.0 | 20110126
 	 License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   vertical-align: baseline;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+       box-sizing: border-box; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
@@ -283,8 +266,7 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none; }
 
@@ -307,5 +289,3 @@ table {
 .ex-bigger {
   font-size: 1.4em;
   margin-bottom: 0; }
-
-/*# sourceMappingURL=minimal.css.map */
