@@ -1,77 +1,77 @@
 /* 03. Text Classes
    ---------------------------------------------------------------------------*/
 
-   // Bold
-   .bold, b, strong {
-	   font: {
-		   weight: $bold;
-	   }
-   }
+// Bold
+.bold, b, strong {
+  font: {
+    weight: $bold;
+  };
+}
 
-   // Italic
-   .italic, i, em {
-	   font: {
-		   style: $italic;
-	   }
-   }
+// Italic
+.italic, i, em {
+  font: {
+    style: $italic;
+  };
+}
 
-   // Uppercase
-   .uppercase {
-	   text: {
-		   transform: $uppercase;
-	   }
-   }
+// Uppercase
+.uppercase {
+  text: {
+    transform: $uppercase;
+  };
+}
 
-   // Lowercase
-   .lowercase {
-	   text: {
-		   transform: $lowercase;
-	   }
-   }
+// Lowercase
+.lowercase {
+  text: {
+    transform: $lowercase;
+  };
+}
 
-   // Pull-Left
-   .pull-left {
-	   text: {
-		   align: left !important;
-		 }
-   }
+// Pull-Left
+.pull-left {
+  text: {
+    align: left !important;
+  };
+}
 
-   // Pull-Right
-   .pull-right {
-	   text: {
-		   align: right !important;
-		 }
-	 }
+// Pull-Right
+.pull-right {
+  text: {
+    align: right !important;
+  };
+}
 
-		// Centered
-	 .centered {
-		 text: {
-			 align: center !important;
-		 }
-	 }
+// Centered
+.centered {
+  text: {
+    align: center !important;
+  };
+}
 
-	 // Lead
-	 .lead {
-		 margin: .2em 0;
-		 color: $gray;
-		 font: {
-			 size: 24px;
-		 }
-	 }
+// Lead
+.lead {
+  margin: .8em 0;
+  color: $gray;
+  font: {
+    size: 24px;
+  };
+}
 
-	 // Code
-	 .code, code {
-	 	font: {
-	 		family: Monaco, Menlo, Consolas, "Lucida Console", monospace;
-	 		weight: 400;
-	 	}
-	 }
+// Code
+.code, code {
+  font: {
+    family: Monaco, Menlo, Consolas, "Lucida Console", monospace;
+    weight: 400;
+  };
+}
 
-	 // Caption
-	 .caption {
-		margin: .1em 0;
-	 	font: {
-	 		style: italic;
-	 		size: 14px;
-	 	}
-	 }
+// Caption
+.caption {
+  margin: .1em 0;
+  font: {
+    style: italic;
+    size: 14px;
+  };
+}

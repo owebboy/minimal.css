@@ -2,28 +2,24 @@
    Oliver Pope
    ---------------------------------------------------------------------------*/
 
-   // Imports
-   @import 'variables';
-   @import 'mixins';
-   @import 'typography';
-   @import 'color';
-   @import 'textclasses';
-   @import 'buttons';
-   @import 'images';
-   @import 'blockquotes';
-   @import 'grid';
-   @import 'reset';
+// Demo
+@import "demo";
 
-   // Example Styles
-   .ex-pad { padding: 4em 0; }
+// CSS
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "typography";
+@import "color";
+@import "layout";
+@import "textclasses";
+@import "buttons";
+@import "images";
+@import "blockquotes";
+@import "table";
+@import "list";
 
-   .ex-type { margin-bottom: 0; }
-
-   .ex-pad-bottom { padding-bottom: 2px; }
-
-   .ex-pad-top { padding-top: 22px; }
-
-   .ex-bigger {
-     font-size: 1.4em;
-     margin-bottom: 0;
-   }
+// Components
+@import "alert";
+@import "nav";
+@import "button-group";

@@ -1,291 +1,350 @@
-/* minimalism.css
-   Oliver Pope
-   ---------------------------------------------------------------------------*/
-/* 01. Typography
-   ---------------------------------------------------------------------------*/
-html {
-  color: #4A4A4A;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-weight: 200; }
+/* minimalism.css Oliver Pope ---------------------------------------------------------------------------*/
+/* 00. Demo ---------------------------------------------------------------------------*/
+.ex-no-pad { padding: 0; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 200; }
+.ex-mar { margin-right: 1em; }
 
-h1 {
-  margin: 0.5em 0;
-  font-size: 36px; }
+.ex-pad { padding: 4em 1em; }
 
-h2 {
-  font-size: 24px; }
+.ex-type { margin-bottom: 0; }
 
-h3, h4, h5, h6 {
-  font-size: 20px; }
+.ex-pad-bottom { padding-bottom: 2px; }
 
-p {
-  font-size: 14px; }
-
-.title {
-  color: #000000;
-  font-size: 48px; }
-
-.subtitle {
-  color: #000000;
-  font-size: 24px; }
-
-/* 02. Color
-   ---------------------------------------------------------------------------*/
-.text-blue {
-  color: #7EB8D9; }
-
-.text-green {
-  color: #98D272; }
-
-.text-yellow {
-  color: #F5DE6C; }
-
-.text-orange {
-  color: #FFC273; }
-
-.text-red {
-  color: #FF6A61; }
-
-.text-purple {
-  color: #9761A8; }
-
-.bg-blue {
-  background: #7EB8D9; }
-
-.bg-green {
-  background: #98D272; }
-
-.bg-yellow {
-  background: #F5DE6C; }
-
-.bg-orange {
-  background: #FFC273; }
-
-.bg-red {
-  background: #FF6A61; }
-
-.bg-purple {
-  background: #9761A8; }
-
-/* 03. Text Classes
-   ---------------------------------------------------------------------------*/
-.bold, b, strong {
-  font-weight: 400; }
-
-.italic, i, em {
-  font-style: italic; }
-
-.uppercase {
-  text-transform: uppercase; }
-
-.lowercase {
-  text-transform: lowercase; }
-
-.pull-left {
-  text-align: left !important; }
-
-.pull-right {
-  text-align: right !important; }
-
-.centered {
-  text-align: center !important; }
-
-.lead {
-  margin: 0.2em 0;
-  color: #7F7F7F;
-  font-size: 24px; }
-
-.code, code {
-  font-family: Monaco, Menlo, Consolas, "Lucida Console", monospace;
-  font-weight: 400; }
-
-.caption {
-  margin: 0.1em 0;
-  font-style: italic;
-  font-size: 14px; }
-
-/* 04. Buttons
-   ---------------------------------------------------------------------------*/
-.btn {
-  color: #000000;
-  padding: 1em;
-  margin: 0.2em;
-  border-radius: 2px;
-  max-width: 100%;
-  display: inline-block;
-  text-decoration: none;
-  text-align: center; }
-
-.btn-blue {
-  background: #7EB8D9; }
-  .btn-blue:hover {
-    background: #a5cee5; }
-
-.btn-green {
-  background: #98D272; }
-  .btn-green:hover {
-    background: #b5de99; }
-
-.btn-yellow {
-  background: #F5DE6C; }
-  .btn-yellow:hover {
-    background: #f8e79c; }
-
-.btn-orange {
-  background: #FFC273; }
-  .btn-orange:hover {
-    background: #ffd7a6; }
-
-.btn-red {
-  background: #FF6A61; }
-  .btn-red:hover {
-    background: #ff9994; }
-
-.btn-purple {
-  background: #9761A8; }
-  .btn-purple:hover {
-    background: #ac82ba; }
-
-/* 05. Images
-   ---------------------------------------------------------------------------*/
-.responsive {
-  width: 100%;
-  height: auto; }
-
-.border {
-  border: 5px solid #4A4A4A; }
-
-.circle {
-  border-radius: 100%; }
-
-/* 06. Blockquotes
-   ---------------------------------------------------------------------------*/
-blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  border-left: 2px solid; }
-  blockquote q {
-    font-size: 20px; }
-
-blockquote.pull-right {
-  padding-right: 15px;
-  padding-left: 0;
-  border-right: 2px solid;
-  border-left: 0;
-  text-align: right; }
-
-/* 06. Grid
-	 ---------------------------------------------------------------------------*/
-html, body {
-  margin: 2em 2%; }
-
-.grid {
-  margin: 0 0 20px 0;
-  width: 100%; }
-  .grid:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-[class*='col-'] {
-  float: left;
-  padding-right: 20px; }
-  .grid [class*='col-']:last-of-type {
-    padding-right: 0; }
-
-.col-2-3 {
-  width: 66.66%; }
-  @media (max-width: 650px) {
-    .col-2-3 {
-      width: 100%; } }
-
-.col-1-3 {
-  width: 33.33%; }
-  @media (max-width: 650px) {
-    .col-1-3 {
-      width: 100%; } }
-
-.col-1-2 {
-  width: 50%; }
-  @media (max-width: 650px) {
-    .col-1-2 {
-      width: 100%; } }
-
-.col-1-4 {
-  width: 25%; }
-  @media (max-width: 650px) {
-    .col-1-4 {
-      width: 100%; } }
-
-.col-1-6 {
-  width: 16.66%; }
-  @media (max-width: 650px) {
-    .col-1-6 {
-      width: 100%; } }
-
-.col-1-8 {
-  width: 12.5%; }
-  @media (max-width: 650px) {
-    .col-1-8 {
-      width: 100%; } }
-
-.module {
-  padding: 20px;
-  background: #eee; }
-
-/* Opt-in outside padding */
-.grid-pad {
-  padding: 20px 0 20px 20px; }
-  .grid-pad [class*='col-']:last-of-type {
-    padding-right: 20px; }
-
-/* Reset
-   ---------------------------------------------------------------------------*/
-/* http://meyerweb.com/eric/tools/css/reset/
-	 v2.0 | 20110126
-	 License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  vertical-align: baseline;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-.ex-pad {
-  padding: 4em 0; }
-
-.ex-type {
-  margin-bottom: 0; }
-
-.ex-pad-bottom {
-  padding-bottom: 2px; }
-
-.ex-pad-top {
-  padding-top: 22px; }
-
-.ex-bigger {
-  font-size: 1.4em;
-  margin-bottom: 0; }
+.ex-pad-top { padding-top: 22px; }
+
+.ex-bigger { font-size: 1.4em; margin-bottom: 0; }
+
+.wrapper, .row { *zoom: 1; }
+.wrapper:before, .row:before, .wrapper:after, .row:after { content: " "; display: table; }
+.wrapper:after, .row:after { clear: both; }
+
+/* Reset ---------------------------------------------------------------------------*/
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/** 1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
+html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+
+/** Remove default margin. */
+body { margin: 0; }
+
+/* HTML5 display definitions ========================================================================== */
+/** Correct `block` display not defined for any HTML5 element in IE 8/9. Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox. Correct `block` display not defined for `main` in IE 11. */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+/** 1. Correct `inline-block` display not defined in IE 8/9. 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera. */
+audio, canvas, progress, video { display: inline-block; /* 1 */ vertical-align: baseline; /* 2 */ }
+
+/** Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices. */
+audio:not([controls]) { display: none; height: 0; }
+
+/** Address `[hidden]` styling not present in IE 8/9/10. Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22. */
+[hidden], template { display: none; }
+
+/* Links ========================================================================== */
+/** Remove the gray background color from active links in IE 10. */
+a { background-color: transparent; }
+
+/** Improve readability when focused and also mouse hovered in all browsers. */
+a:active, a:hover { outline: 0; }
+
+/* Text-level semantics ========================================================================== */
+/** Address styling not present in IE 8/9/10/11, Safari, and Chrome. */
+abbr[title] { border-bottom: 1px dotted; }
+
+/** Address style set to `bolder` in Firefox 4+, Safari, and Chrome. */
+b, strong { font-weight: bold; }
+
+/** Address styling not present in Safari and Chrome. */
+dfn { font-style: italic; }
+
+/** Address variable `h1` font-size and margin within `section` and `article` contexts in Firefox 4+, Safari, and Chrome. */
+h1 { font-size: 2em; margin: 0.67em 0; }
+
+/** Address styling not present in IE 8/9. */
+mark { background: #ff0; color: #000; }
+
+/** Address inconsistent and variable font size in all browsers. */
+small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+/* Embedded content ========================================================================== */
+/** Remove border when inside `a` element in IE 8/9/10. */
+img { border: 0; }
+
+/** Correct overflow not hidden in IE 9/10/11. */
+svg:not(:root) { overflow: hidden; }
+
+/* Grouping content ========================================================================== */
+/** Address margin not present in IE 8/9 and Safari. */
+figure { margin: 1em 40px; }
+
+/** Address differences between Firefox and other browsers. */
+hr { box-sizing: content-box; height: 0; }
+
+/** Contain overflow in all browsers. */
+pre { overflow: auto; }
+
+/** Address odd `em`-unit font size rendering in all browsers. */
+code, kbd, pre, samp { font-family: monospace, monospace; font-size: 1em; }
+
+/* Forms ========================================================================== */
+/** Known limitation: by default, Chrome and Safari on OS X allow very limited styling of `select`, unless a `border` property is set. */
+/** 1. Correct color not being inherited. Known issue: affects color of disabled elements. 2. Correct font properties not being inherited. 3. Address margins set differently in Firefox 4+, Safari, and Chrome. */
+button, input, optgroup, select, textarea { color: inherit; /* 1 */ font: inherit; /* 2 */ margin: 0; /* 3 */ }
+
+/** Address `overflow` set to `hidden` in IE 8/9/10/11. */
+button { overflow: visible; }
+
+/** Address inconsistent `text-transform` inheritance for `button` and `select`. All other form control elements do not inherit `text-transform` values. Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera. Correct `select` style inheritance in Firefox. */
+button, select { text-transform: none; }
+
+/** 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls. 2. Correct inability to style clickable `input` types in iOS. 3. Improve usability and consistency of cursor style between image-type `input` and others. */
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; /* 2 */ cursor: pointer; /* 3 */ }
+
+/** Re-set default cursor for disabled elements. */
+button[disabled], html input[disabled] { cursor: default; }
+
+/** Remove inner padding and border in Firefox 4+. */
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/** Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
+input { line-height: normal; }
+
+/** It's recommended that you don't attempt to style these elements. Firefox's implementation doesn't respect box-sizing, padding, or width.  1. Address box sizing set to `content-box` in IE 8/9/10. 2. Remove excess padding in IE 8/9/10. */
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** Fix the cursor style for Chrome's increment/decrement buttons. For certain `font-size` values of the `input`, it causes the cursor style of the decrement button to change from `default` to `text`. */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height: auto; }
+
+/** 1. Address `appearance` set to `searchfield` in Safari and Chrome. 2. Address `box-sizing` set to `border-box` in Safari and Chrome (include `-moz` to future-proof). */
+input[type="search"] { -webkit-appearance: textfield; /* 1 */ /* 2 */ box-sizing: content-box; }
+
+/** Remove inner padding and search cancel button in Safari and Chrome on OS X. Safari (but not Chrome) clips the cancel button when the search input has padding (and `textfield` appearance). */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/** Define consistent border, margin, and padding. */
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+/** 1. Correct `color` not being inherited in IE 8/9/10/11. 2. Remove padding so people aren't caught out if they zero out fieldsets. */
+legend { border: 0; /* 1 */ padding: 0; /* 2 */ }
+
+/** Remove default vertical scrollbar in IE 8/9/10/11. */
+textarea { overflow: auto; }
+
+/** Don't inherit the `font-weight` (applied by a rule above). NOTE: the default cannot safely be changed in Chrome and Safari on OS X. */
+optgroup { font-weight: bold; }
+
+/* Tables ========================================================================== */
+/** Remove most spacing between table cells. */
+table { border-collapse: collapse; border-spacing: 0; }
+
+td, th { padding: 0; }
+
+/* 01. Typography ---------------------------------------------------------------------------*/
+html { color: #4A4A4A; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; font-weight: 200; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: 200; }
+
+h1 { margin: .5em 0; font-size: 36px; }
+
+h2 { font-size: 24px; }
+
+h3, h4, h5, h6 { font-size: 20px; }
+
+p { font-size: 16px; }
+
+.title { color: #000000; font-size: 48px; }
+
+.subtitle { color: #000000; font-size: 24px; }
+
+a { color: #7EB8D9; -webkit-transition: .3s all; transition: .3s all; text-decoration: none; }
+a:hover { color: #98D272; }
+
+/* 02. Color ---------------------------------------------------------------------------*/
+.text-blue { color: #7EB8D9; }
+
+.text-green { color: #98D272; }
+
+.text-yellow { color: #F5DE6C; }
+
+.text-orange { color: #FFC273; }
+
+.text-red { color: #FF6A61; }
+
+.text-purple { color: #9761A8; }
+
+.bg-blue { background: #7EB8D9; }
+
+.bg-green { background: #98D272; }
+
+.bg-yellow { background: #F5DE6C; }
+
+.bg-orange { background: #FFC273; }
+
+.bg-red { background: #FF6A61; }
+
+.bg-purple { background: #9761A8; }
+
+.wrapper { width: 100%; margin: 0 auto; }
+
+[class*='col-'] { float: left; width: 100%; min-height: 1px; }
+
+@media only screen and (min-width: 720px) { .wrapper { width: 95%; max-width: 65em; }
+  .col-1 { width: 8.3333333333%; }
+  .col-2 { width: 16.6666666667%; }
+  .col-3 { width: 25%; }
+  .col-4 { width: 33.3333333333%; }
+  .col-5 { width: 41.6666666667%; }
+  .col-6 { width: 50%; }
+  .col-7 { width: 58.3333333333%; }
+  .col-8 { width: 66.6666666667%; }
+  .col-9 { width: 75%; }
+  .col-10 { width: 83.3333333333%; }
+  .col-11 { width: 91.6666666667%; }
+  .col-12 { width: 100%; } }
+/* 03. Text Classes ---------------------------------------------------------------------------*/
+.bold, b, strong { font-weight: 400; }
+
+.italic, i, em { font-style: italic; }
+
+.uppercase { text-transform: uppercase; }
+
+.lowercase { text-transform: lowercase; }
+
+.pull-left { text-align: left !important; }
+
+.pull-right { text-align: right !important; }
+
+.centered { text-align: center !important; }
+
+.lead { margin: .8em 0; color: #7F7F7F; font-size: 24px; }
+
+.code, code { font-family: Monaco, Menlo, Consolas, "Lucida Console", monospace; font-weight: 400; }
+
+.caption { margin: .1em 0; font-style: italic; font-size: 14px; }
+
+/* 04. Buttons ---------------------------------------------------------------------------*/
+.btn { color: #000000; padding: 1em; margin: .2em; border: 1px solid; max-width: 100%; display: inline-block; -webkit-appearance: none; background-color: inherit; font-size: 16px; font-weight: 200; text-decoration: none; text-align: center; }
+.btn:hover { color: #000000; }
+
+.btn-blue { background: #7EB8D9; border-color: #378bba; }
+.btn-blue:hover { background: #cde3f0; }
+
+.btn-green { background: #98D272; border-color: #63a836; }
+.btn-green:hover { background: #d0ebbf; }
+
+.btn-yellow { background: #F5DE6C; border-color: #ebc610; }
+.btn-yellow:hover { background: #fbf3cc; }
+
+.btn-orange { background: #FFC273; border-color: #ff960d; }
+.btn-orange:hover { background: #ffeed9; }
+
+.btn-red { background: #FF6A61; border-color: #fa0e00; }
+.btn-red:hover { background: #ff9a94; }
+
+.btn-purple { background: #9761A8; border-color: #5e3a69; }
+.btn-purple:hover { background: #ad82ba; }
+
+/* 05. Images ---------------------------------------------------------------------------*/
+.responsive { width: 100%; height: auto; }
+
+.border { border: 5px solid #4A4A4A; }
+
+.circle { border-radius: 100%; }
+
+/* 05. Blockquotes ---------------------------------------------------------------------------*/
+blockquote { padding: 10px 20px; margin: 0 0 20px; border-left: 2px solid; }
+blockquote q { font-size: 20px; }
+
+blockquote.pull-right { padding-right: 15px; padding-left: 0; border-right: 2px solid; border-left: 0; text-align: right; }
+
+/* 07. Tables ---------------------------------------------------------------------------*/
+table { border-collapse: collapse; width: 100%; }
+
+table, td, th { border: 1px solid #7F7F7F; }
+
+th, td { padding: 1em .5em; }
+
+th { border-bottom: 2px solid #4A4A4A; text-align: left; font-weight: 500; }
+
+.number { text-align: right; }
+
+/* 08. List ---------------------------------------------------------------------------*/
+ol, ul { padding: 0; }
+ol li, ul li { padding: .5em 0; }
+
+ol { list-style: decimal-leading-zero inside none; }
+
+ul { list-style: circle inside none; }
+
+/* 101. Alerts ---------------------------------------------------------------------------*/
+.alert { padding: 0 1em; margin: 1em 0; }
+.alert a { font-weight: normal; }
+
+.alert-blue { background: #7EB8D9; color: #20506b; border: 1px solid #378bba; }
+.alert-blue a { color: #20506b; }
+.alert-blue a:hover { color: #08151d; }
+
+.alert-green { background: #98D272; color: #365b1d; border: 1px solid #63a836; }
+.alert-green a { color: #365b1d; }
+.alert-green a:hover { color: #080e04; }
+
+.alert-yellow { background: #F5DE6C; color: #8c7609; border: 1px solid #ebc610; }
+.alert-yellow a { color: #8c7609; }
+.alert-yellow a:hover { color: #2c2503; }
+
+.alert-orange { background: #FFC273; color: #a65e00; border: 1px solid #ff960d; }
+.alert-orange a { color: #a65e00; }
+.alert-orange a:hover { color: #402400; }
+
+.alert-red { background: #FF6A61; color: #940800; border: 1px solid #fa0e00; }
+.alert-red a { color: #940800; }
+.alert-red a:hover { color: #2e0300; }
+
+.alert-purple { background: #9761A8; color: #231627; border: 1px solid #5e3a69; }
+.alert-purple a { color: #231627; }
+.alert-purple a:hover { color: black; }
+
+/* 102. Navigation ---------------------------------------------------------------------------*/
+.nav-horz { border-bottom: 1px solid #7F7F7F; }
+.nav-horz .nav-item { margin: 0; padding: 1em; display: table-cell; }
+.nav-horz .nav-item a { font-size: 18px; text-align: center; color: #4A4A4A; }
+.nav-horz .nav-item:hover { background: #e5e5e5; }
+.nav-horz .current { border-left: 1px solid #7F7F7F; border-right: 1px solid #7F7F7F; border-top: 1px solid #7F7F7F; }
+
+.nav-vert .nav-item { margin-right: 1em; border-bottom: 1px solid #7F7F7F; display: block; padding: .7em; font-size: 18px; color: #4A4A4A; }
+
+/* 103. Button Groups ---------------------------------------------------------------------------*/
+/** @define ButtonGroup */
+/*! suit-button-group v2.2.0 | MIT License | github.com/suitcss */
+/** Create a visual connection between UI actions that belong together. Must only contain `ButtonGroup-item` objects as children.  Example HTML:  <div class="ButtonGroup [ButtonGroup--hz]"> <div class="ButtonGroup-item"> <a class="Button" href="#">Dashboard</a> </div> <div class="ButtonGroup-item"> <a class="Button" href="#">Account</a> </div> <div class="ButtonGroup-item"> <a class="Button" href="#">Logout</a> </div> </div> */
+/** Button group  1. Ensure component is full-width if applied to elements that are `inline-block` by default. 2. Collapse whitespace between child elements. Only necessary for the `ButtonGroup--hz` modifier which lays items out as `inline-block`, but included in the base component so that affects on `font-size` are consistent. 3. Remove any default styles that might be present when `ol` or `ul` are the root element. */
+.btn-group { display: block; /* 1 */ font-size: 0; /* 2 */ margin: 0; /* 3 */ list-style: none; /* 3 */ padding: 0; /* 3 */ }
+
+/** Button group item  1. Make it full-width if applied to elements that are `inline-block` by default. 2. Reset the font size of the buttons to the root font size. */
+.btn-group-item { display: block; /* 1 */ }
+
+.btn-group-item > .btn { display: block; width: 100%; border-right: 0px solid; }
+
+.btn-group-item:last-child > .btn-blue { border-right: 1px solid #378bba; }
+
+.btn-group-item:last-child > .btn-green { border-right: 1px solid #63a836; }
+
+.btn-group-item:last-child > .btn-yellow { border-right: 1px solid #ebc610; }
+
+.btn-group-item:last-child > .btn-orange { border-right: 1px solid #ff960d; }
+
+.btn-group-item:last-child > .btn-red { border-right: 1px solid #fa0e00; }
+
+.btn-group-item:last-child > .btn-purple { border-right: 1px solid #5e3a69; }
+
+/** Ensure that interactions with a button make it sit on top of other buttons in the group. */
+.btn-group-item > .btn:hover, .btn-group-item > .btn:focus, .btn-group-item > .btn:active, .btn-group-item > .btn.is-pressed { z-index: 1; }
+
+/* Modifier: horizontal buttons ========================================================================== */
+.btn-group-horz > .btn-group-item { display: inline-block; }

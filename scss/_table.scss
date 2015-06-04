@@ -1,0 +1,27 @@
+/* 07. Tables
+   ---------------------------------------------------------------------------*/
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, td, th {
+  border: 1px solid $gray;
+}
+
+th, td {
+  padding: 1em .5em;
+}
+
+th {
+  border-bottom: 2px solid $dark;
+  text: {
+    align: left;
+  };
+  font-weight: 500;
+}
+
+.number {
+  text-align: right;
+}

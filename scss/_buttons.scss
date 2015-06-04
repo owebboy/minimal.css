@@ -1,57 +1,70 @@
 /* 04. Buttons
    ---------------------------------------------------------------------------*/
 
-   .btn {
-     color: $black;
-     padding: 1em;
-     margin: .2em;
-     border-radius: 2px;
-     max-width: 100%;
-     display: inline-block;
-     text: {
-       decoration: none;
-       align: center;
-     }
-   }
+.btn {
+  color: $black;
+  padding: 1em;
+  margin: .2em;
+  border: 1px solid;
+  max-width: 100%;
+  display: inline-block;
+  -webkit-appearance: none;
+  background-color: inherit;
+  font-size: 16px;
+  font-weight: 200;
+  text: {
+    decoration: none;
+    align: center;
+  };
+  &:hover {
+    color: $black;
+  }
+}
 
-   .btn-blue {
-     background: $blue;
-     &:hover {
-       background: lighten( $blue, 10% );
-     }
-   }
+.btn-blue {
+  background: $blue;
+  border-color: darken($blue, 20%);
+  &:hover {
+    background: lighten($blue, 20%);
+  }
+}
 
-   .btn-green {
-     background: $green;
-     &:hover {
-       background: lighten( $green, 10% );
-     }
-   }
+.btn-green {
+  background: $green;
+  border-color: darken($green, 20%);
+  &:hover {
+    background: lighten($green, 20%);
+  }
+}
 
-   .btn-yellow {
-     background: $yellow;
-     &:hover {
-       background: lighten( $yellow, 10% );
-     }
-   }
+.btn-yellow {
+  background: $yellow;
+  border-color: darken($yellow, 20%);
+  &:hover {
+    background: lighten($yellow, 20%);
+  }
+}
 
-   .btn-orange {
-     background: $orange;
-     &:hover {
-       background: lighten( $orange, 10% );
-     }
-   }
+.btn-orange {
+  background: $orange;
+  border-color: darken($orange, 20%);
+  &:hover {
+    background: lighten($orange, 20%);
+  }
+}
 
-   .btn-red {
-     background: $red;
-     &:hover {
-       background: lighten( $red, 10% );
-     }
-   }
+.btn-red {
+  background: $red;
+  border-color: darken($red, 20%);
+  &:hover {
+    background: lighten($red, 10%);
+  }
+}
 
-   .btn-purple {
-     background: $purple;
-     &:hover {
-       background: lighten( $purple, 10% );
-     }
-   }
+.btn-purple {
+  background: $purple;
+  border-color: darken($purple, 20%);
+  &:hover {
+    background: lighten($purple, 10%);
+  }
+}

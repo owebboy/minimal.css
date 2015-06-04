@@ -1,10 +1,22 @@
 # minimal.css
 
-## features
-- simple
-- easy to use
-- responsive
-- clean
+## css
+- [reset](http://meyerweb.com/eric/tools/css/reset/)
+- typography
+- color
+- text classes
+- buttons
+- images
+- block quotes
+- grid
+- table
+- lists
 
-## author
-created by [owebboy](https://owebboy.com)
+## components
+- alerts
+- nav
+- button-group
+- bread crumbs
+- label
+- badges
+- list group

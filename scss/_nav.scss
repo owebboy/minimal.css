@@ -1,0 +1,37 @@
+/* 102. Navigation
+   ---------------------------------------------------------------------------*/
+
+   // Horz
+   .nav-horz {
+     border-bottom: 1px solid $gray;
+     .nav-item {
+       margin: 0;
+       padding: 1em;
+       display: table-cell;
+       a {
+         font-size: 18px;
+         text-align: center;
+         color: $dark;
+       }
+       &:hover {
+         background: lighten($gray, 40%);
+       }
+     }
+     .current {
+       border-left: 1px solid $gray;
+       border-right: 1px solid $gray;
+       border-top: 1px solid $gray;
+     }
+   }
+
+   // Vert
+   .nav-vert {
+     .nav-item {
+       margin-right: 1em;
+       border-bottom: 1px solid $gray;
+       display: block;
+       padding: .7em;
+       font-size: 18px;
+       color: $dark;
+     }
+   }

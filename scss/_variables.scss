@@ -1,37 +1,50 @@
 // Variables
 // ---------------------------------------------------------------------------
 
-	 // 01. Typography
-	 $heading-1: 36px;
-	 $heading-2: 24px;
-	 $heading-3: 20px;
-	 $paragraph: 14px;
-	 $title: 48px;
-	 $subtitle: 24px;
+// 01. Typography
+$heading-1: 36px;
+$heading-2: 24px;
+$heading-3: 20px;
+$paragraph: 16px;
+$title: 48px;
+$subtitle: 24px;
 
-	 // 02. Color
-	 $blue: #7EB8D9;
-	 $green: #98D272;
-	 $yellow: #F5DE6C;
-	 $orange: #FFC273;
-	 $red: #FF6A61;
-	 $purple: #9761A8;
+// 02. Color
+$blue: #7EB8D9;
+$green: #98D272;
+$yellow: #F5DE6C;
+$orange: #FFC273;
+$red: #FF6A61;
+$purple: #9761A8;
 
-	 $gray: #7F7F7F;
-	 $dark: #4A4A4A;
-	 $black: #000000;
+$gray: #7F7F7F;
+$dark: #4A4A4A;
+$black: #000000;
 
-	 // 03: Text Classes
-	 $bold: 400;
-	 $italic: italic;
-	 $uppercase: uppercase;
-	 $lowercase: lowercase;
+// 03: Text Classes
+$bold: 400;
+$italic: italic;
+$uppercase: uppercase;
+$lowercase: lowercase;
 
-	 $pull-left: left;
-	 $pull-right: right;
-	 $centered: center;
-	 $capxion: 14px;
-	 $lead: 24px;
+$pull-left: left;
+$pull-right: right;
+$centered: center;
+$caption: 14px;
+$lead: 24px;
 
-	 // 04. Grid
-	 $pad: 20px;
+// 09. Grid
+
+// grid variables
+$grid-columns: 12;
+$grid-max-width: 65em;
+
+// breakpoints
+$breakpoint-small: "only screen and (min-width: 320px)";
+$breakpoint-medium: "only screen and (min-width: 720px)";
+
+// components
+
+// 101. Alerts
+$alert-pad: 0 1em;
+$alert-margin: 1em 0;

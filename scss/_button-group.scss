@@ -1,0 +1,108 @@
+/* 103. Button Groups
+   ---------------------------------------------------------------------------*/
+
+   /** @define ButtonGroup */
+
+   /*! suit-button-group v2.2.0 | MIT License | github.com/suitcss */
+
+   /**
+    * Create a visual connection between UI actions that belong together.
+    * Must only contain `ButtonGroup-item` objects as children.
+    *
+    * Example HTML:
+    *
+    * <div class="ButtonGroup [ButtonGroup--hz]">
+    *   <div class="ButtonGroup-item">
+    *     <a class="Button" href="#">Dashboard</a>
+    *   </div>
+    *   <div class="ButtonGroup-item">
+    *     <a class="Button" href="#">Account</a>
+    *   </div>
+    *   <div class="ButtonGroup-item">
+    *     <a class="Button" href="#">Logout</a>
+    *   </div>
+    * </div>
+    */
+
+   /**
+    * Button group
+    *
+    * 1. Ensure component is full-width if applied to elements that are
+    *    `inline-block` by default.
+    * 2. Collapse whitespace between child elements. Only necessary for the
+    *    `ButtonGroup--hz` modifier which lays items out as `inline-block`, but
+    *    included in the base component so that affects on `font-size` are
+    *    consistent.
+    * 3. Remove any default styles that might be present when `ol` or `ul` are the
+    *    root element.
+    */
+
+   .btn-group {
+     display: block; /* 1 */
+     font-size: 0; /* 2 */
+     margin: 0; /* 3 */
+     list-style: none; /* 3 */
+     padding: 0; /* 3 */
+   }
+
+   /**
+    * Button group item
+    *
+    * 1. Make it full-width if applied to elements that are `inline-block` by
+    *    default.
+    * 2. Reset the font size of the buttons to the root font size.
+    */
+
+   .btn-group-item {
+     display: block; /* 1 */
+   }
+
+   .btn-group-item > .btn {
+     display: block;
+     width: 100%;
+     border-right: 0px solid;
+   }
+
+   .btn-group-item:last-child > .btn-blue {
+     border-right: 1px solid darken($blue, 20%);
+   }
+
+   .btn-group-item:last-child > .btn-green {
+     border-right: 1px solid darken($green, 20%);
+   }
+
+   .btn-group-item:last-child > .btn-yellow {
+     border-right: 1px solid darken($yellow, 20%);
+   }
+
+   .btn-group-item:last-child > .btn-orange {
+     border-right: 1px solid darken($orange, 20%);
+   }
+
+   .btn-group-item:last-child > .btn-red {
+     border-right: 1px solid darken($red, 20%);
+   }
+
+   .btn-group-item:last-child > .btn-purple {
+     border-right: 1px solid darken($purple, 20%);
+   }
+
+   /**
+    * Ensure that interactions with a button make it sit on top of other buttons
+    * in the group.
+    */
+
+   .btn-group-item > .btn:hover,
+   .btn-group-item > .btn:focus,
+   .btn-group-item > .btn:active,
+   .btn-group-item > .btn.is-pressed {
+     z-index: 1;
+   }
+
+
+   /* Modifier: horizontal buttons
+      ========================================================================== */
+
+   .btn-group-horz > .btn-group-item {
+     display: inline-block;
+   }

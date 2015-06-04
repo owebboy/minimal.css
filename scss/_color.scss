@@ -1,19 +1,52 @@
 /* 02. Color
    ---------------------------------------------------------------------------*/
 
-   // Text Color
-   .text-blue   { color: $blue;   }
-   .text-green  { color: $green;  }
-   .text-yellow { color: $yellow; }
-   .text-orange { color: $orange; }
-   .text-red    { color: $red;    }
-   .text-purple { color: $purple; }
+  // Text Color
+  .text-blue {
+    color: $blue;
+  }
 
-   // Background Colors
-   .bg-blue   { background: $blue;   }
-   .bg-green  { background: $green;  }
-   .bg-yellow { background: $yellow; }
-   .bg-orange { background: $orange; }
-   .bg-red    { background: $red;    }
-   .bg-purple { background: $purple; }
+  .text-green {
+    color: $green;
+  }
 
+  .text-yellow {
+    color: $yellow;
+  }
+
+  .text-orange {
+    color: $orange;
+  }
+
+  .text-red {
+    color: $red;
+  }
+
+  .text-purple {
+    color: $purple;
+  }
+
+  // Background Colors
+  .bg-blue {
+    background: $blue;
+  }
+
+  .bg-green {
+    background: $green;
+  }
+
+  .bg-yellow {
+    background: $yellow;
+  }
+
+  .bg-orange {
+    background: $orange;
+  }
+
+  .bg-red {
+    background: $red;
+  }
+
+  .bg-purple {
+    background: $purple;
+  }

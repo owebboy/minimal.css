@@ -1,0 +1,17 @@
+/* 08. List
+   ---------------------------------------------------------------------------*/
+
+ol, ul {
+  padding: 0;
+  li {
+    padding: .5em 0;
+  }
+}
+
+ol {
+  list-style: decimal-leading-zero inside none;
+}
+
+ul {
+  list-style: circle inside none;
+}

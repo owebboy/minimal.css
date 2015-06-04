@@ -11,14 +11,31 @@
 </head>
 
 <body>
-  <div id="page">
-    <header>
-      <h1 class="title">minimal.css <span class="subtitle">style
-      guide</span></h1>
+  <div id="page" class="wrapper">
+    <header class="row">
+      <div class="col-6">
+        <h1 class="title">minimal.css <span class="subtitle">style
+        guide</span></h1>
+      </div>
+
+      <div class="col-6">
+        <br>
+        <nav class="nav-horz">
+          <div class="nav-item current">
+            <a href="#">CSS</a>
+          </div>
+          <div class="nav-item">
+            <a href="/components.html">Components</a>
+          </div>
+          <div class="nav-item">
+            <a href="//github.com/owebboy/minimal.min.css">Github</a>
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <div class="grid">
-      <section class="col-1-3">
+    <div class="row">
+      <section class="col-4">
         <!-- 01. Typography -->
 
         <section id="typography">
@@ -41,6 +58,10 @@
 
             <p class="caption">Helvetica Neue, 14px</p>
 
+            <p class="ex-type"><a href="#yolo">This is a link</a></p>
+
+            <p class="caption">blue, hover:green</p>
+
             <h1 class="title ex-type">Title</h1>
 
             <p class="caption">Helvetica Neue, 48px .title</p>
@@ -48,11 +69,12 @@
             <h2 class="subtitle ex-type">Subtitle</h2>
 
             <p class="caption">Helvetica Neue, 24px .subtitle</p>
+
           </div>
         </section>
       </section>
 
-      <section class="col-2-3">
+      <section class="col-8">
         <!-- 02. Color -->
 
         <section id="color">
@@ -61,26 +83,46 @@
           <p>For backgrounds, use <code>.bg-*color*</code> and for text,
           <code>.text-*color*</code> .</p>
 
-          <div class="example grid">
-            <div class="bg-blue col-1-6 ex-pad"></div>
+          <div class="row">
+            <div class="col-2 ex-no-pad">
+              <div class="bg-blue ex-pad"></div>
+              <p class="caption">.blue</p>
+            </div>
 
-            <div class="bg-green col-1-6 ex-pad"></div>
+            <div class="col-2 ex-no-pad">
+              <div class="bg-green ex-pad"></div>
+              <p class="caption">.green</p>
+            </div>
 
-            <div class="bg-yellow col-1-6 ex-pad"></div>
+            <div class="col-2 ex-no-pad">
+              <div class="bg-yellow ex-pad"></div>
+              <p class="caption">.yellow</p>
+            </div>
 
-            <div class="bg-orange col-1-6 ex-pad"></div>
+            <div class="col-2 ex-no-pad">
+              <div class="bg-orange ex-pad"></div>
+              <p class="caption">.orange</p>
+            </div>
 
-            <div class="bg-red col-1-6 ex-pad"></div>
+            <div class="col-2 ex-no-pad">
+              <div class="bg-red ex-pad"></div>
+              <p class="caption">.red</p>
+            </div>
 
-            <div class="bg-purple col-1-6 ex-pad"></div>
+            <div class="col-2 ex-no-pad">
+              <div class="bg-purple ex-pad"></div>
+              <p class="caption">.purple</p>
+            </div>
           </div>
-        </section><!-- 03. Text Classes -->
+        </section>
 
+        <!-- 03. Text Classes -->
         <section id="text-classes">
           <p class="lead">03. Text Classes</p>
 
-          <div class="example grid">
-            <div class="col-1-2">
+          <div class="row">
+            <div class="col-6">
+
               <div id="bold">
                 <p class="ex-bigger bold">Paragraph</p>
 
@@ -110,9 +152,11 @@
 
                 <p class="caption">.code, code</p>
               </div>
+
             </div>
 
-            <div class="col-1-2">
+            <div class="col-6">
+
               <div id="pull-left">
                 <p class="ex-bigger pull-left">Paragraph</p>
 
@@ -142,52 +186,53 @@
 
                 <p class="caption">.lead</p>
               </div>
+
             </div>
           </div>
         </section>
       </section>
 
-      <section class="col-1-2">
+      <section class="col-6">
         <!-- 04. Buttons -->
 
         <section id="buttons">
           <p class="lead">04. Buttons</p><br>
 
-          <div class="example grid">
-            <div class="col-1-3" id="blue-button">
+          <div class="row">
+            <div class="col-4" id="blue-button">
               <a class="btn btn-blue" href="#">Blue Button</a>
             </div>
 
-            <div class="col-1-3" id="green-button">
+            <div class="col-4" id="green-button">
               <a class="btn btn-green" href="#">Green Button</a>
             </div>
 
-            <div class="col-1-3" id="yellow-button">
+            <div class="col-4" id="yellow-button">
               <a class="btn btn-yellow" href="#">Yellow Button</a>
             </div>
           </div>
 
-          <div class="example grid">
-            <div class="col-1-3" id="orange-button">
+          <div class="row">
+            <div class="col-4" id="orange-button">
               <a class="btn btn-orange" href="#">Orange Button</a>
             </div>
 
-            <div class="col-1-3" id="red-button">
+            <div class="col-4" id="red-button">
               <a class="btn btn-red" href="#">Red Button</a>
             </div>
 
-            <div class="col-1-3" id="purple-button">
+            <div class="col-4" id="purple-button">
               <a class="btn btn-purple" href="#">Purple Button</a>
             </div>
           </div>
         </section>
       </section>
 
-      <section class="col-1-2">
-        <!-- 06. Blockquotes -->
+      <section class="col-6">
+        <!-- 05. Blockquotes -->
 
         <section id="blockquotes">
-          <p class="lead">06. Blockquotes</p><br>
+          <p class="lead">05. Blockquotes</p><br>
 
           <div class="example">
             <div id="blockquote">
@@ -213,170 +258,239 @@
         </section>
       </section>
 
-      <section>
-        <!-- 05. Images -->
+      <section class="col-6">
+
+        <!-- 06. Images -->
 
         <section id="images">
-          <p class="lead">05. Images</p><br>
+          <p class="lead">06. Images</p><br>
 
-          <div class="example grid">
-            <div class="col-1-2" id="responsive">
+          <div class="row">
+            <div id="responsive" class="col-11">
               <img class="responsive" src="http://placehold.it/960x250">
 
               <p class="caption">Responsive Image<br>
               .responsive</p>
             </div>
 
-            <div class="col-1-4" id="border">
-              <img class="border" src="http://placehold.it/250">
+            <div id="border" class="col-6">
+              <img class="border" src="http://placehold.it/200">
 
               <p class="caption">Bordered Image<br>
               .border</p>
             </div>
 
-            <div class="col-1-4" id="circle">
-              <img class="circle" src="http://placehold.it/250">
+            <div id="circle" class="col-6">
+              <img class="circle" src="http://placehold.it/200">
 
               <p class="caption">Circular Image<br>
               .circle</p>
             </div>
           </div>
         </section>
+
       </section>
 
-      <section>
-        <!-- 07. The Grid -->
+      <section class="col-6">
+
+        <!-- 07. The Table -->
+
+        <section id="table">
+          <p class="lead">07. Table</p><br>
+
+          <table>
+            <thead>
+              <tr>
+                <th class="number">#</th>
+                <th>Fruits</th>
+                <th>Veggies</th>
+                <th>Grains</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="number">1</td>
+                <td>Apples</td>
+                <td>Carrots</td>
+                <td>Wheats</td>
+              </tr>
+              <tr>
+                <td class="number">2</td>
+                <td>Oranges</td>
+                <td>Cucumbers</td>
+                <td>Oats</td>
+              </tr>
+              <tr>
+                <td class="number">3</td>
+                <td>Kiwis</td>
+                <td>Spinachs</td>
+                <td>Rices</td>
+              </tr>
+              <tr>
+                <td class="number">4</td>
+                <td>Bananas</td>
+                <td>Kales</td>
+                <td>Corns</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <p class="caption">table: collapse, border gray</p>
+          <p class="caption">table-head (th): border 2px, weight 500</p>
+          <p class="caption">.number: align right</p>
+        </section>
+
+      </section>
+
+      <section class="col-12">
+
+        <!-- 08. List -->
+
+        <section id="list">
+
+          <p class="lead">08. List</p><br>
+
+          <div class="grid">
+
+            <div class="col-3">
+              <ul>
+                <li>Lettuce</li>
+                <li>Pickles</li>
+                <li>Tomatoes</li>
+                <li>Ketchup</li>
+                <li>Mustard</li>
+              </ul>
+
+              <p class="caption">list style circle</p>
+
+            </div>
+
+            <div class="col-3">
+              <ol>
+                <li>Salsa</li>
+                <li>Chips</li>
+                <li>Bread</li>
+                <li>Wine</li>
+                <li>Cheese</li>
+              </ol>
+
+              <p class="caption">list style decimal leading zero</p>
+
+            </div>
+
+        </section>
+
+      </section>
+
+      <section class="col-12">
+
+        <!-- 09. The Grid -->
 
         <section id="grid">
-          <p class="lead">07. Grid</p>
+
+          <p class="lead">09. Grid</p>
 
           <div class="example">
-            <div class="grid" id="col-1-2">
-              <h3 class="subtitle">Halfs</h3>
+            <div class="grid" id="col-6">
+              <h3>Halfs</h3>
 
-              <div class="col-1-2 bg-blue">
+              <div class="col-6 bg-blue">
                 <h2>1/2 Column</h2>
               </div>
 
-              <div class="col-1-2 bg-blue">
+              <div class="col-6 bg-blue">
                 <h2>1/2 Column</h2>
               </div>
             </div>
 
             <div class="grid" id="1-3-grid">
-              <h3 class="subtitle">Thirds</h3>
+              <br>
+              <h3>Thirds</h3>
 
-              <div class="col-1-3 bg-green">
+              <div class="col-4 bg-green">
                 <h2>1/3 Column</h2>
               </div>
 
-              <div class="col-1-3 bg-green">
+              <div class="col-4 bg-green">
                 <h2>1/3 Column</h2>
               </div>
 
-              <div class="col-1-3 bg-green">
+              <div class="col-4 bg-green">
                 <h2>1/3 Column</h2>
               </div>
             </div>
 
             <div class="grid" id="1-2-3-grid">
-              <h3 class="subtitle">Two-Thirds</h3>
+              <br>
+              <h3>Two-Thirds</h3>
 
-              <div class="col-2-3 bg-yellow">
+              <div class="col-8 bg-yellow">
                 <h2>2/3 Column</h2>
               </div>
 
-              <div class="col-1-3 bg-green">
+              <div class="col-4 bg-green">
                 <h2>1/3 Column</h2>
               </div>
             </div>
 
             <div class="grid" id="1-4-grid">
-              <h3 class="subtitle">Fourths</h3>
+              <br>
+              <h3>Fourths</h3>
 
-              <div class="col-1-4 bg-orange">
+              <div class="col-3 bg-orange">
                 <h2>1/4 Column</h2>
               </div>
 
-              <div class="col-1-4 bg-orange">
+              <div class="col-3 bg-orange">
                 <h2>1/4 Column</h2>
               </div>
 
-              <div class="col-1-4 bg-orange">
+              <div class="col-3 bg-orange">
                 <h2>1/4 Column</h2>
               </div>
 
-              <div class="col-1-4 bg-orange">
+              <div class="col-3 bg-orange">
                 <h2>1/4 Column</h2>
               </div>
             </div>
 
             <div class="grid" id="1-6-grid">
-              <h3 class="subtitle">Sixths</h3>
+              <br>
+              <h3>Sixths</h3>
 
-              <div class="col-1-6 bg-red">
+              <div class="col-2 bg-red">
                 <h2>1/6 Column</h2>
               </div>
 
-              <div class="col-1-6 bg-red">
+              <div class="col-2 bg-red">
                 <h2>1/6 Column</h2>
               </div>
 
-              <div class="col-1-6 bg-red">
+              <div class="col-2 bg-red">
                 <h2>1/6 Column</h2>
               </div>
 
-              <div class="col-1-6 bg-red">
+              <div class="col-2 bg-red">
                 <h2>1/6 Column</h2>
               </div>
 
-              <div class="col-1-6 bg-red">
+              <div class="col-2 bg-red">
                 <h2>1/6 Column</h2>
               </div>
 
-              <div class="col-1-6 bg-red">
+              <div class="col-2 bg-red">
                 <h2>1/6 Column</h2>
               </div>
+
             </div>
 
-            <div class="grid" id="1-8-grid">
-              <h3 class="subtitle">Eighths</h3>
-
-              <div class="col-1-8 bg-purple">
-                <h2>1/8 Column</h2>
-              </div>
-
-              <div class="col-1-8 bg-purple">
-                <h2>1/8 Column</h2>
-              </div>
-
-              <div class="col-1-8 bg-purple">
-                <h2>1/8 Column</h2>
-              </div>
-
-              <div class="col-1-8 bg-purple">
-                <h2>1/8 Column</h2>
-              </div>
-
-              <div class="col-1-8 bg-purple">
-                <h2>1/8 Column</h2>
-              </div>
-
-              <div class="col-1-8 bg-purple">
-                <h2>1/8 Column</h2>
-              </div>
-
-              <div class="col-1-8 bg-purple">
-                <h2>1/8 Column</h2>
-              </div>
-
-              <div class="col-1-8 bg-purple">
-                <h2>1/8 Column</h2>
-              </div>
-            </div>
           </div>
+
         </section>
+
       </section>
+
+      <section>
     </div>
   </div>
 </body>
