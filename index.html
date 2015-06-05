@@ -11,6 +11,13 @@
 </head>
 
 <body>
+  <div class="ex-head bg-blue">
+    <div class="ex-inner-head centered">
+      <h1 class="ex-head-text title ex-no-mar ex-xbig">minimal.css</h1>
+      <p class="ex-head-text ex-no-mar ex-mbig">a beautiful user experience</p>
+    </div>
+  </div>
+
   <div id="page" class="wrapper">
     <header class="row">
       <div class="col-6">
@@ -28,7 +35,7 @@
             <a href="/components.html">Components</a>
           </div>
           <div class="nav-item">
-            <a href="//github.com/owebboy/minimal.min.css">Github</a>
+            <a href="//github.com/owebboy/minimal.css">Github</a>
           </div>
         </nav>
       </div>
@@ -352,7 +359,7 @@
 
           <div class="grid">
 
-            <div class="col-3">
+            <div class="col-4">
               <ul>
                 <li>Lettuce</li>
                 <li>Pickles</li>
@@ -365,7 +372,7 @@
 
             </div>
 
-            <div class="col-3">
+            <div class="col-4">
               <ol>
                 <li>Salsa</li>
                 <li>Chips</li>
@@ -378,20 +385,39 @@
 
             </div>
 
+            <div class="col-4">
+              <dl>
+                <dt>Coffee</dt>
+                <dd>Black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>White cold drink</dd>
+                <dt>Green Tea</dt>
+                <dd>Fancy hot/cold drink</dd>
+                <dt>Coca-Cola &reg;</dt>
+                <dd>Brown cold drink</dd>
+                <dt>Slurpee &reg;</dt>
+                <dd>Multi-colored cold drink</dd>
+              </dl>
+
+              <p class="caption">dt: weight 400</p>
+              <p class="caption">dd: margin left .8em</p>
+
+            </div>
+
         </section>
 
       </section>
 
       <section class="col-12">
 
-        <!-- 09. The Grid -->
+        <!-- 09. Layout -->
 
         <section id="grid">
 
-          <p class="lead">09. Grid</p>
+          <p class="lead">09. Layout</p>
 
           <div class="example">
-            <div class="grid" id="col-6">
+            <div class="row" id="col-6">
               <h3>Halfs</h3>
 
               <div class="col-6 bg-blue">
@@ -401,10 +427,12 @@
               <div class="col-6 bg-blue">
                 <h2>1/2 Column</h2>
               </div>
+
+              <p class="col-6 caption">.col-6</p>
+              <p class="col-6 caption">.col-6</p>
             </div>
 
-            <div class="grid" id="1-3-grid">
-              <br>
+            <div class="row" id="1-3-grid">
               <h3>Thirds</h3>
 
               <div class="col-4 bg-green">
@@ -418,10 +446,13 @@
               <div class="col-4 bg-green">
                 <h2>1/3 Column</h2>
               </div>
+
+              <p class="col-4 caption">.col-4</p>
+              <p class="col-4 caption">.col-4</p>
+              <p class="col-4 caption">.col-4</p>
             </div>
 
-            <div class="grid" id="1-2-3-grid">
-              <br>
+            <div class="row" id="1-2-3-grid">
               <h3>Two-Thirds</h3>
 
               <div class="col-8 bg-yellow">
@@ -431,10 +462,13 @@
               <div class="col-4 bg-green">
                 <h2>1/3 Column</h2>
               </div>
+
+              <p class="col-8 caption">.col-8</p>
+              <p class="col-4 caption">.col-4</p>
             </div>
 
-            <div class="grid" id="1-4-grid">
-              <br>
+            <div class="row" id="1-4-grid">
+
               <h3>Fourths</h3>
 
               <div class="col-3 bg-orange">
@@ -452,10 +486,15 @@
               <div class="col-3 bg-orange">
                 <h2>1/4 Column</h2>
               </div>
+
+              <p class="col-3 caption">.col-3</p>
+              <p class="col-3 caption">.col-3</p>
+              <p class="col-3 caption">.col-3</p>
+              <p class="col-3 caption">.col-3</p>
             </div>
 
-            <div class="grid" id="1-6-grid">
-              <br>
+            <div class="row" id="1-6-grid">
+
               <h3>Sixths</h3>
 
               <div class="col-2 bg-red">
@@ -482,6 +521,69 @@
                 <h2>1/6 Column</h2>
               </div>
 
+              <p class="col-2 caption">.col-2</p>
+              <p class="col-2 caption">.col-2</p>
+              <p class="col-2 caption">.col-2</p>
+              <p class="col-2 caption">.col-2</p>
+              <p class="col-2 caption">.col-2</p>
+              <p class="col-2 caption">.col-2</p>
+
+            </div>
+
+            <div class="row" id="1-6-grid">
+
+              <h3>Twelths</h3>
+
+              <div class="col-1 bg-purple">
+                <h2>1/12 Column</h2>
+              </div>
+              <div class="col-1 bg-purple">
+                <h2>1/12 Column</h2>
+              </div>
+              <div class="col-1 bg-purple">
+                <h2>1/12 Column</h2>
+              </div>
+              <div class="col-1 bg-purple">
+                <h2>1/12 Column</h2>
+              </div>
+              <div class="col-1 bg-purple">
+                <h2>1/12 Column</h2>
+              </div>
+              <div class="col-1 bg-purple">
+                <h2>1/12 Column</h2>
+              </div>
+              <div class="col-1 bg-purple">
+                <h2>1/12 Column</h2>
+              </div>
+              <div class="col-1 bg-purple">
+                <h2>1/12 Column</h2>
+              </div>
+              <div class="col-1 bg-purple">
+                <h2>1/12 Column</h2>
+              </div>
+              <div class="col-1 bg-purple">
+                <h2>1/12 Column</h2>
+              </div>
+              <div class="col-1 bg-purple">
+                <h2>1/12 Column</h2>
+              </div>
+              <div class="col-1 bg-purple">
+                <h2>1/12 Column</h2>
+              </div>
+
+              <p class="col-1 caption">.col-1</p>
+              <p class="col-1 caption">.col-1</p>
+              <p class="col-1 caption">.col-1</p>
+              <p class="col-1 caption">.col-1</p>
+              <p class="col-1 caption">.col-1</p>
+              <p class="col-1 caption">.col-1</p>
+              <p class="col-1 caption">.col-1</p>
+              <p class="col-1 caption">.col-1</p>
+              <p class="col-1 caption">.col-1</p>
+              <p class="col-1 caption">.col-1</p>
+              <p class="col-1 caption">.col-1</p>
+              <p class="col-1 caption">.col-1</p>
+
             </div>
 
           </div>
@@ -492,6 +594,10 @@
 
       <section>
     </div>
+
+    <footer class="centered">
+      <p class="ex-no-mar ex-sbig"><a class="text-black" href="//owebboy.com">@owebboy</a> - v2.0</p>
+    </footer>
   </div>
 </body>
 </html>

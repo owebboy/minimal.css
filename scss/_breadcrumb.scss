@@ -2,5 +2,15 @@
    ---------------------------------------------------------------------------*/
 
    .breadcrumb {
-     background: $gray;
+     border-bottom: 1px solid $gray;
+     padding: .5em;
+     li {
+       display: inline-block;
+       font-style: italic;
+       :after {
+         content: ">";
+         color: $gray;
+         margin: .5em;
+       }
+     }
    }

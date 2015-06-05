@@ -1,0 +1,43 @@
+/* 105. Label
+   ---------------------------------------------------------------------------*/
+
+   .label {
+     padding: .2em .5em;
+     border: 1px solid;
+   }
+
+   .label-blue {
+     background: $blue;
+     color: darken($blue, 40%);
+     border-color: darken($blue, 20%);
+   }
+
+   .label-green {
+     background: $green;
+     color: darken($green, 40%);
+     border-color: darken($green, 20%);
+   }
+
+   .label-yellow {
+     background: $yellow;
+     color: darken($yellow, 40%);
+     border-color: darken($yellow, 20%);
+   }
+
+   .label-orange {
+     background: $orange;
+     color: darken($orange, 40%);
+     border-color: darken($orange, 20%);
+   }
+
+   .label-red {
+     background: $red;
+     color: darken($red, 40%);
+     border-color: darken($red, 20%);
+   }
+
+   .label-purple {
+     background: $purple;
+     color: darken($purple, 40%);
+     border-color: darken($purple, 20%);
+   }

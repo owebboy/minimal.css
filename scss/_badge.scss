@@ -1,0 +1,40 @@
+/* 106 Badge
+   ---------------------------------------------------------------------------*/
+
+  .badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 15px;
+    line-height: 1;
+    color: $white;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: $gray;
+    border-radius: 10px;
+  }
+
+  .badge-blue {
+    background: $blue;
+  }
+
+  .badge-green {
+    background: $green;
+  }
+
+  .badge-yellow {
+    background: $yellow;
+  }
+
+  .badge-orange {
+    background: $orange;
+  }
+
+  .badge-red {
+    background: $red;
+  }
+
+  .badge-purple {
+    background: $purple;
+  }

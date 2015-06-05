@@ -26,6 +26,22 @@
     color: $purple;
   }
 
+  .text-dark {
+    color: $dark;
+  }
+
+  .text-gray {
+    color: $gray;
+  }
+
+  .text-black {
+    color: $black;
+  }
+
+  .text-white {
+    color: $white;
+  }
+
   // Background Colors
   .bg-blue {
     background: $blue;
@@ -49,4 +65,20 @@
 
   .bg-purple {
     background: $purple;
+  }
+
+  .bg-dark {
+    color: $dark;
+  }
+
+  .bg-gray {
+    color: $gray;
+  }
+
+  .bg-black {
+    color: $black;
+  }
+
+  .bg-white {
+    color: $white;
   }

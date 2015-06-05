@@ -1,32 +1,60 @@
 /* 00. Demo
    ---------------------------------------------------------------------------*/
 
-// Example Styles
-.ex-no-pad {
-  padding: 0;
-}
+  // Example Styles
+  .ex-no-pad {
+    padding: 0;
+  }
 
-.ex-mar {
-  margin-right: 1em;
-}
+  .ex-mar {
+    margin-right: 1em;
+  }
 
-.ex-pad {
-  padding: 4em 1em;
-}
+  .ex-pad {
+    padding: 4em 1em;
+  }
 
-.ex-type {
-  margin-bottom: 0;
-}
+  .ex-type {
+    margin-bottom: 0;
+  }
 
-.ex-pad-bottom {
-  padding-bottom: 2px;
-}
+  .ex-pad-bottom {
+    padding-bottom: 2px;
+  }
 
-.ex-pad-top {
-  padding-top: 22px;
-}
+  .ex-pad-top {
+    padding-top: 22px;
+  }
 
-.ex-bigger {
-  font-size: 1.4em;
-  margin-bottom: 0;
-}
+  .ex-bigger {
+    font-size: 1.4em;
+    margin-bottom: 0;
+  }
+
+  .ex-xbig {
+    font-size: 100px !important;
+  }
+
+  .ex-mbig {
+    font-size: 30px !important;
+  }
+
+  .ex-no-mar {
+    margin: 0;
+  }
+
+  .ex-head {
+    border-bottom: 1px solid darken($blue, 30%);
+  }
+
+  .ex-inner-head {
+    padding: 200px 0;
+  }
+
+  .ex-head-text {
+    color: darken($blue, 60%) !important;
+  }
+
+  footer {
+    padding: 3em 0;
+  }

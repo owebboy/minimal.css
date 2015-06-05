@@ -5,10 +5,10 @@
    .nav-horz {
      border-bottom: 1px solid $gray;
      .nav-item {
-       margin: 0;
-       padding: 1em;
        display: table-cell;
        a {
+         display: block;
+         padding: 1em;
          font-size: 18px;
          text-align: center;
          color: $dark;
@@ -34,4 +34,10 @@
        font-size: 18px;
        color: $dark;
      }
+   }
+
+   // fixed
+
+   .fixed {
+     position: fixed;
    }
